@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel - Xonalarni bron qilish</title>
+    <link rel="stylesheet" href="mexmonxona.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="rasimlar/umumiy.png" alt="Grand Hotel logotipi" class="logo">
+        <h1>Grand Hotel</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#kirish">Bosh sahifa</a></li>
+            <li><a href="#xonalar">Xonalar</a></li>
+            <li><a href="#galereya">Galereya</a></li>
+            
+            <li><a href="#bron">Bron qilish</a></li>
+            <li><a href="#aloqa">Aloqa</a></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collabsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <section id="kirish">
+        <h2>Xush kelibsiz!</h2>
+        <img src="rasimlar/umumiy.png" alt="Mehmonxona tashqi ko'rinishi" class="asosiy-rasm">
+        <p>
+            Grand Hotel onlayn bron tizimi orqali siz kerakli xonani
+            tanlab, uni bir necha daqiqada band qilishingiz mumkin.
+        </p>
+    </section>
+    <section id="afzalliklar">
+        <h2>Bizning afzalliklarimiz</h2>
+        <ul>
+            <li>Bepul Wi-Fi va nonushta</li>
+            <li>24/7 qabulxona xizmati</li>
+            <li>Shahar markaziga yaqin joylashuv</li>
+            <li>Bepul avtoturargoh</li>
+        </ul>
+    </section>
+    <section id="tartib">
+        <h2>Bron qilish tartibi</h2>
+        <ol>
+            <li><a href="#xonalar">Xonani</a> tanlang</li>
+            <li><a href="#bron">Bron formasini</a> to'ldiring</li>
+            <li>Tasdiqlash xabarini kuting</li>
+            <li>Belgilangan kuni mehmonxonaga keling</li>
+        </ol>
+    </section>
+    <section id="xonalar">
+        <h2>Xonalar va narxlar</h2>
+        <div class="xona-kartalar">
+            <img src="rasimlar/odiy.png" alt="Standart xona" class="xona">
+            <img src="rasimlar/lux.png" alt="Lyuks xona" class="xona">
+            <img src="rasimlar/odiy.png" alt="Oilaviy xona" class="xona">
+        </div>
+        <table>
+            <caption>Xona turlari va bir kecha narxi</caption>
+            <tr>
+                <th>Xona turi</th>
+                <th>Sig'imi</th>
+                <th>Narx (so'm)</th>
+            </tr>
+            <tr>
+                <td>Standart</td>
+                <td>2 kishi</td>
+                <td>350 000</td>
+            </tr>
+            <tr>
+                <td>Lyuks</td>
+                <td>2 kishi</td>
+                <td>600 000</td>
+            </tr>
+            <tr>
+                <td>Oilaviy</td>
+                <td>4 kishi</td>
+                <td>800 000</td>
+            </tr>
+        </table>
+    </section>
+    <section id="galereya">
+        <h2>Galereya</h2>
+
+        <h3>Mehmonxona videosi</h3>
+        <video src="rasimlar/vido.mp4" controls width="640"></video>
+
+        <h3>Fon musiqasi</h3>
+        <audio src="audio/musiqa.mp3" controls></audio>
+    </section>
+    <section id="bron">
+        <h2>Xonani bron qilish</h2>
+        <form action="#" method="post">
+            <label for="ism">Ism-familiya:</label>
+            <input type="text" id="ism" name="ism" placeholder="Ali Valiyev" required>
+            <label for="tel">Telefon:</label>
+            <input type="tel" id="tel" name="tel" placeholder="+998 90 123 45 67">
+            <label for="kelish">Kelish sanasi:</label>
+            <input type="date" id="kelish" name="kelish" required>
+            <label for="xona">Xona turi:</label>
+            <select id="xona" name="xona">
+                <option value="standart">Standart</option>
+                <option value="lyuks">Lyuks</option>
+                <option value="oilaviy">Oilaviy</option>
+            </select>
+
+            <p>To'lov turi:</p>
+            <input type="radio" id="naqd" name="tolov" value="naqd" checked>
+            <label for="naqd">Naqd</label>
+            <input type="radio" id="karta" name="tolov" value="karta">
+            <label for="karta">Plastik karta</label>
+
+            <p>Qo'shimcha:</p>
+            <input type="checkbox" id="nonushta" name="xizmat" value="nonushta">
+            <label for="nonushta">Nonushta</label>
+
+            <label for="izoh">Izoh:</label>
+            <textarea id="izoh" name="izoh" rows="4"></textarea>
+
+            <button type="submit">Bron qilish</button>
+        </form>
+    </section>
+    <section id="aloqa">
+
+        <h2>Mehmonxona rejasi</h2>
+        <p>Rasmdagi qismlarni bosing:</p>
+        <img src="rasimlar/xarita.png"   alt="Mehmonxona rejasi" usemap="#hotelreja" width="400" height="400">
+        <map name="hotelreja">
+            <area shape="rect" coords="164,332,180,297,206,307,236,322,218,357,164,332" href="#xonalar" alt="Xonalar">
+        </map>
+        <h2>Aloqa</h2>
+        <p>Manzil: Toshkent sh., Amir Temur ko'chasi, 15-uy</p>
+        <p>Telefon: +998 90 123 45 67</p>
+        <p style="color: darkred; ">Ish vaqti: har kuni 24 soat</p>
+    </section>
+
+</body>
+
+</html>
